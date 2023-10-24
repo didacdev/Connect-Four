@@ -11,7 +11,11 @@ struct ContentView: View {
     var body: some View {
         VStack {
             TitleView()
+            Spacer()
             ScoreboardView()
+            Spacer()
+            BoardView()
+            Spacer()
             BottonsView()
         }
         .padding()
