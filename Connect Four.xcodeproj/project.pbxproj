@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C32127C72AE7A98E001C887F /* ScoreboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32127C62AE7A98E001C887F /* ScoreboardView.swift */; };
 		C35BE6462AE7CF9C0065D5EA /* BottonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35BE6452AE7CF9C0065D5EA /* BottonsView.swift */; };
+		C35BE6482AE80EA20065D5EA /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35BE6472AE80EA20065D5EA /* TitleView.swift */; };
 		C39597172AE6F19F00404606 /* Connect_FourApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39597162AE6F19F00404606 /* Connect_FourApp.swift */; };
 		C39597192AE6F19F00404606 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39597182AE6F19F00404606 /* ContentView.swift */; };
 		C395971B2AE6F1A100404606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C395971A2AE6F1A100404606 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		C32127C62AE7A98E001C887F /* ScoreboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardView.swift; sourceTree = "<group>"; };
 		C35BE6452AE7CF9C0065D5EA /* BottonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottonsView.swift; sourceTree = "<group>"; };
+		C35BE6472AE80EA20065D5EA /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		C39597132AE6F19F00404606 /* Connect Four.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Connect Four.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39597162AE6F19F00404606 /* Connect_FourApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connect_FourApp.swift; sourceTree = "<group>"; };
 		C39597182AE6F19F00404606 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			children = (
 				C32127C62AE7A98E001C887F /* ScoreboardView.swift */,
 				C35BE6452AE7CF9C0065D5EA /* BottonsView.swift */,
+				C35BE6472AE80EA20065D5EA /* TitleView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				C39597172AE6F19F00404606 /* Connect_FourApp.swift in Sources */,
 				C32127C72AE7A98E001C887F /* ScoreboardView.swift in Sources */,
 				C39597412AE6F69600404606 /* ContentViewModel.swift in Sources */,
+				C35BE6482AE80EA20065D5EA /* TitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +446,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Connect Four/Preview Content\"";
+				DEVELOPMENT_TEAM = U83AYT842T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -470,6 +475,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Connect Four/Preview Content\"";
+				DEVELOPMENT_TEAM = U83AYT842T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

@@ -36,6 +36,7 @@ struct ScoreboardView: View {
         }
         .padding()
         .background(Color(red: 0.196, green: 0.305, blue: 0.488), in: RoundedRectangle(cornerRadius: 10))
+        .shadow(color: Color(red: 0.196, green: 0.305, blue: 0.488), radius: 2)
         
         
     }
