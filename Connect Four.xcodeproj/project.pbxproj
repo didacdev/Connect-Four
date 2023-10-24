@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C32127C72AE7A98E001C887F /* ScoreboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32127C62AE7A98E001C887F /* ScoreboardView.swift */; };
+		C35BE6462AE7CF9C0065D5EA /* BottonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35BE6452AE7CF9C0065D5EA /* BottonsView.swift */; };
 		C39597172AE6F19F00404606 /* Connect_FourApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39597162AE6F19F00404606 /* Connect_FourApp.swift */; };
 		C39597192AE6F19F00404606 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39597182AE6F19F00404606 /* ContentView.swift */; };
 		C395971B2AE6F1A100404606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C395971A2AE6F1A100404606 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		C32127C62AE7A98E001C887F /* ScoreboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardView.swift; sourceTree = "<group>"; };
+		C35BE6452AE7CF9C0065D5EA /* BottonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottonsView.swift; sourceTree = "<group>"; };
 		C39597132AE6F19F00404606 /* Connect Four.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Connect Four.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39597162AE6F19F00404606 /* Connect_FourApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connect_FourApp.swift; sourceTree = "<group>"; };
 		C39597182AE6F19F00404606 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				C32127C62AE7A98E001C887F /* ScoreboardView.swift */,
+				C35BE6452AE7CF9C0065D5EA /* BottonsView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C39597192AE6F19F00404606 /* ContentView.swift in Sources */,
+				C35BE6462AE7CF9C0065D5EA /* BottonsView.swift in Sources */,
 				C39597172AE6F19F00404606 /* Connect_FourApp.swift in Sources */,
 				C32127C72AE7A98E001C887F /* ScoreboardView.swift in Sources */,
 				C39597412AE6F69600404606 /* ContentViewModel.swift in Sources */,
