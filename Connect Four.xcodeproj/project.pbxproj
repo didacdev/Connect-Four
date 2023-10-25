@@ -21,6 +21,7 @@
 		C3D9E9C62AE816FC00BCFF80 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9E9C52AE816FC00BCFF80 /* BoardView.swift */; };
 		C3D9E9C82AE8174900BCFF80 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9E9C72AE8174900BCFF80 /* SquareView.swift */; };
 		C3D9E9CB2AE8191E00BCFF80 /* BoardColumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9E9CA2AE8191E00BCFF80 /* BoardColumView.swift */; };
+		C3F8912C2AE98F8500239A54 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8912B2AE98F8500239A54 /* Square.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		C3D9E9C52AE816FC00BCFF80 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		C3D9E9C72AE8174900BCFF80 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
 		C3D9E9CA2AE8191E00BCFF80 /* BoardColumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardColumView.swift; sourceTree = "<group>"; };
+		C3F8912B2AE98F8500239A54 /* Square.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				C39597162AE6F19F00404606 /* Connect_FourApp.swift */,
 				C39597182AE6F19F00404606 /* ContentView.swift */,
 				C39597402AE6F69600404606 /* ContentViewModel.swift */,
+				C3F8912A2AE98F6400239A54 /* Model */,
 				C32127C52AE7A91C001C887F /* Components */,
 				C395971A2AE6F1A100404606 /* Assets.xcassets */,
 				C395971C2AE6F1A100404606 /* Preview Content */,
@@ -154,6 +157,14 @@
 				C39597332AE6F1A200404606 /* Connect_FourUITestsLaunchTests.swift */,
 			);
 			path = "Connect FourUITests";
+			sourceTree = "<group>";
+		};
+		C3F8912A2AE98F6400239A54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3F8912B2AE98F8500239A54 /* Square.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3F8912C2AE98F8500239A54 /* Square.swift in Sources */,
 				C3D9E9C62AE816FC00BCFF80 /* BoardView.swift in Sources */,
 				C39597192AE6F19F00404606 /* ContentView.swift in Sources */,
 				C3D9E9CB2AE8191E00BCFF80 /* BoardColumView.swift in Sources */,

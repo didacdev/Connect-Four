@@ -10,8 +10,11 @@ import SwiftUI
 struct BottonsView: View {
     var body: some View {
         HStack {
-            Button("Restart") {
+            Button {
                 
+            } label: {
+                Text("Restart")
+                    .fontWeight(.medium)
             }
             .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
             .padding()
@@ -19,8 +22,11 @@ struct BottonsView: View {
             .background(Color(red: 0.669, green: 0.158, blue: 0.531), in: RoundedRectangle(cornerRadius: 10))
             .shadow(color: Color(red: 0.669, green: 0.158, blue: 0.531), radius: 2)
             
-            Button("Reset") {
+            Button {
                 
+            } label: {
+                Text("Reset")
+                    .fontWeight(.medium)
             }
             .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
             .padding()
