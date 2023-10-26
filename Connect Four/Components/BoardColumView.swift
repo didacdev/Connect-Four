@@ -9,38 +9,39 @@ import SwiftUI
 
 struct BoardColumView: View {
     
-    @State var color = Square.SquareColor.red
-    @State var squares = [
-        SquareView(square: Square(color: Square.SquareColor.gray)),
-        SquareView(square: Square(color: Square.SquareColor.gray)),
-        SquareView(square: Square(color: Square.SquareColor.gray)),
-        SquareView(square: Square(color: Square.SquareColor.gray)),
-        SquareView(square: Square(color: Square.SquareColor.gray)),
-        SquareView(square: Square(color: Square.SquareColor.gray))
-    ]
-
+    @State var color = ChipModel.ChipColor.red
+    @State var column: Int
+    @StateObject private var board = BoardViewModel()
     
     var body: some View {
-
+        
         Button {
             
             for value in stride(from:5, through: 0, by: -1) {
-                if squares[value].square.color == Square.SquareColor.gray {
-                    squares[value].square.color = Square.SquareColor.red
+                if board.board[column][value].square.color == ChipModel.ChipColor.gray {
+                    board.board[column][value] = SquareView(square: ChipModel(color: color))
                     break
                 }
             }
             
         } label: {
+            
             VStack {
-                ForEach(0 ..< squares.count, id: \.self) { value in
-                    squares[value]
+                
+                ForEach(board.board[column]) { square in
+                
+                    square
+                    
                 }
+                
             }
+            
         }
+
+        
     }
 }
 
 #Preview {
-    BoardColumView()
+    BoardColumView(column: 0)
 }

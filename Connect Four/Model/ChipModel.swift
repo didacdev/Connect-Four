@@ -9,15 +9,15 @@ import Foundation
 import SwiftUI
 
 
-struct Square {
+struct ChipModel {
     
-    enum SquareColor: String {
+    enum ChipColor: String {
         case red
         case yellow
         case gray
     }
 
     
-    var color: SquareColor
+    var color: ChipColor
     
 }

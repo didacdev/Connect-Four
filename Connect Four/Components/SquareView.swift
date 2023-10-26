@@ -7,9 +7,11 @@
 
 import SwiftUI
 
-struct SquareView: View {
+struct SquareView: View, Identifiable {
     
-    var square: Square
+    var id: UUID = UUID()
+    
+    @State var square: ChipModel
     
     var body: some View {
         ZStack {
@@ -17,15 +19,15 @@ struct SquareView: View {
                 .frame(minWidth: 40, maxHeight: 40)
                 .background(Color(red: 0.182, green: 0.281, blue: 0.343), in: RoundedRectangle(cornerRadius: 5))
             
-            if square.color == Square.SquareColor.gray  {
+            if square.color == ChipModel.ChipColor.gray  {
                 Text("")
                     .frame(minWidth: 30, maxHeight: 30)
                     .overlay(Circle().foregroundColor(Color(red: 0.182, green: 0.281, blue: 0.343)))
-            } else if square.color == Square.SquareColor.red {
+            } else if square.color == ChipModel.ChipColor.red {
                 Text("")
                     .frame(minWidth: 30, maxHeight: 30)
                     .overlay(Circle().foregroundColor(Color.red))
-            } else if square.color == Square.SquareColor.yellow {
+            } else if square.color == ChipModel.ChipColor.yellow {
                 Text("")
                     .frame(minWidth: 30, maxHeight: 30)
                     .overlay(Circle().foregroundColor(Color.yellow))
@@ -37,5 +39,5 @@ struct SquareView: View {
 }
 
 #Preview {
-    SquareView(square: Square(color: Square.SquareColor.gray))
+    SquareView(square: ChipModel(color: ChipModel.ChipColor.gray))
 }

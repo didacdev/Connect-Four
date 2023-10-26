@@ -17,11 +17,11 @@
 		C39597282AE6F1A200404606 /* Connect_FourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39597272AE6F1A200404606 /* Connect_FourTests.swift */; };
 		C39597322AE6F1A200404606 /* Connect_FourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39597312AE6F1A200404606 /* Connect_FourUITests.swift */; };
 		C39597342AE6F1A200404606 /* Connect_FourUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39597332AE6F1A200404606 /* Connect_FourUITestsLaunchTests.swift */; };
-		C39597412AE6F69600404606 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39597402AE6F69600404606 /* ContentViewModel.swift */; };
 		C3D9E9C62AE816FC00BCFF80 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9E9C52AE816FC00BCFF80 /* BoardView.swift */; };
 		C3D9E9C82AE8174900BCFF80 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9E9C72AE8174900BCFF80 /* SquareView.swift */; };
 		C3D9E9CB2AE8191E00BCFF80 /* BoardColumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9E9CA2AE8191E00BCFF80 /* BoardColumView.swift */; };
-		C3F8912C2AE98F8500239A54 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8912B2AE98F8500239A54 /* Square.swift */; };
+		C3F8912C2AE98F8500239A54 /* ChipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8912B2AE98F8500239A54 /* ChipModel.swift */; };
+		C3FD12DC2AEA4BF20068E402 /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FD12DB2AEA4BF20068E402 /* BoardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,11 +55,11 @@
 		C395972D2AE6F1A200404606 /* Connect FourUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Connect FourUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39597312AE6F1A200404606 /* Connect_FourUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connect_FourUITests.swift; sourceTree = "<group>"; };
 		C39597332AE6F1A200404606 /* Connect_FourUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connect_FourUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C39597402AE6F69600404606 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		C3D9E9C52AE816FC00BCFF80 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		C3D9E9C72AE8174900BCFF80 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
 		C3D9E9CA2AE8191E00BCFF80 /* BoardColumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardColumView.swift; sourceTree = "<group>"; };
-		C3F8912B2AE98F8500239A54 /* Square.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
+		C3F8912B2AE98F8500239A54 /* ChipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipModel.swift; sourceTree = "<group>"; };
+		C3FD12DB2AEA4BF20068E402 /* BoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +125,6 @@
 			children = (
 				C39597162AE6F19F00404606 /* Connect_FourApp.swift */,
 				C39597182AE6F19F00404606 /* ContentView.swift */,
-				C39597402AE6F69600404606 /* ContentViewModel.swift */,
 				C3F8912A2AE98F6400239A54 /* Model */,
 				C32127C52AE7A91C001C887F /* Components */,
 				C395971A2AE6F1A100404606 /* Assets.xcassets */,
@@ -162,7 +161,8 @@
 		C3F8912A2AE98F6400239A54 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C3F8912B2AE98F8500239A54 /* Square.swift */,
+				C3F8912B2AE98F8500239A54 /* ChipModel.swift */,
+				C3FD12DB2AEA4BF20068E402 /* BoardViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -297,16 +297,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3F8912C2AE98F8500239A54 /* Square.swift in Sources */,
+				C3F8912C2AE98F8500239A54 /* ChipModel.swift in Sources */,
 				C3D9E9C62AE816FC00BCFF80 /* BoardView.swift in Sources */,
 				C39597192AE6F19F00404606 /* ContentView.swift in Sources */,
 				C3D9E9CB2AE8191E00BCFF80 /* BoardColumView.swift in Sources */,
 				C35BE6462AE7CF9C0065D5EA /* BottonsView.swift in Sources */,
 				C39597172AE6F19F00404606 /* Connect_FourApp.swift in Sources */,
 				C32127C72AE7A98E001C887F /* ScoreboardView.swift in Sources */,
-				C39597412AE6F69600404606 /* ContentViewModel.swift in Sources */,
 				C35BE6482AE80EA20065D5EA /* TitleView.swift in Sources */,
 				C3D9E9C82AE8174900BCFF80 /* SquareView.swift in Sources */,
+				C3FD12DC2AEA4BF20068E402 /* BoardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
