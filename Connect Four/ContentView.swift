@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @StateObject var board = BoardViewModel()
+    
     var body: some View {
         VStack {
             TitleView()
@@ -24,5 +26,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ContentView().environmentObject(BoardViewModel())
 }

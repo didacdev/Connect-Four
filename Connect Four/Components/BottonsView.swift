@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct BottonsView: View {
+    
+    @EnvironmentObject var board: BoardViewModel
+    
     var body: some View {
         HStack {
             Button {
+                
+                board.restart()
                 
             } label: {
                 Text("Restart")
@@ -23,6 +28,8 @@ struct BottonsView: View {
             .shadow(color: Color(red: 0.669, green: 0.158, blue: 0.531), radius: 2)
             
             Button {
+                
+                board.cleanBoard()
                 
             } label: {
                 Text("Reset")
@@ -38,5 +45,5 @@ struct BottonsView: View {
 }
 
 #Preview {
-    BottonsView()
+    BottonsView().environmentObject(BoardViewModel())
 }

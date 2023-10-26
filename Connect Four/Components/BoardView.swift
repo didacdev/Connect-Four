@@ -8,16 +8,22 @@
 import SwiftUI
 
 struct BoardView: View {
-
-//    @StateObject private var board = BoardViewModel()
+    
+    @EnvironmentObject var board: BoardViewModel
     
     var body: some View {
         HStack {
-            
+            BoardColumView(column: 0)
+            BoardColumView(column: 1)
+            BoardColumView(column: 2)
+            BoardColumView(column: 3)
+            BoardColumView(column: 4)
+            BoardColumView(column: 5)
+            BoardColumView(column: 6)
         }
     }
 }
 
 #Preview {
-    BoardView()
+    BoardView().environmentObject(BoardViewModel())
 }

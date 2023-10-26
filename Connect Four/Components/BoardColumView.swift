@@ -11,7 +11,7 @@ struct BoardColumView: View {
     
     @State var color = ChipModel.ChipColor.red
     @State var column: Int
-    @StateObject private var board = BoardViewModel()
+    @EnvironmentObject var board: BoardViewModel
     
     var body: some View {
         
@@ -33,15 +33,11 @@ struct BoardColumView: View {
                     square
                     
                 }
-                
             }
-            
         }
-
-        
     }
 }
 
 #Preview {
-    BoardColumView(column: 0)
+    BoardColumView(column: 0).environmentObject(BoardViewModel())
 }

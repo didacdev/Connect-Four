@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct ScoreboardView: View {
+    
+    @EnvironmentObject var board: BoardViewModel
+    
     var body: some View {
         HStack {
             VStack {
                 Text("Red")
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
-                Text("0")
+                Text("\(board.redScore)")
                     .fontWeight(.medium)
                     .foregroundColor(.white)
             }
@@ -26,7 +29,7 @@ struct ScoreboardView: View {
                 Text("Yellow")
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
-                Text("0")
+                Text("\(board.yellowScore)")
                     .fontWeight(.medium)
                     .foregroundColor(.white)
             }
@@ -38,10 +41,9 @@ struct ScoreboardView: View {
         .background(Color(red: 0.196, green: 0.305, blue: 0.488), in: RoundedRectangle(cornerRadius: 10))
         .shadow(color: Color(red: 0.196, green: 0.305, blue: 0.488), radius: 2)
         
-        
     }
 }
 
 #Preview {
-    ScoreboardView()
+    ScoreboardView().environmentObject(BoardViewModel())
 }
