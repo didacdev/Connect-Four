@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct TitleView: View {
+    
+    @AppStorage("isDarkMode") private var isDarkMode: Bool = false
+    
     var body: some View {
         VStack {
             Button {
+                
+                isDarkMode.toggle()
                 
             } label: {
                 Image(systemName: "moon.fill")

@@ -19,11 +19,7 @@ struct SquareView: View, Identifiable {
                 .frame(minWidth: 40, maxHeight: 40)
                 .background(Color(red: 0.182, green: 0.281, blue: 0.343), in: RoundedRectangle(cornerRadius: 5))
             
-            if square.color == ChipModel.ChipColor.gray  {
-                Text("")
-                    .frame(minWidth: 30, maxHeight: 30)
-                    .overlay(Circle().foregroundColor(Color(red: 0.182, green: 0.281, blue: 0.343)))
-            } else if square.color == ChipModel.ChipColor.red {
+            if square.color == ChipModel.ChipColor.red {
                 Text("")
                     .frame(minWidth: 30, maxHeight: 30)
                     .overlay(Circle().foregroundColor(Color.red))

@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct Connect_FourApp: App {
+    
+    @AppStorage("isDarkMode") private var isDarkMode = false
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(BoardViewModel())
+                .preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
 }

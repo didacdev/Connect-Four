@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C30718372AEC1ED70061D781 /* WinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30718362AEC1ED70061D781 /* WinView.swift */; };
 		C32127C72AE7A98E001C887F /* ScoreboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32127C62AE7A98E001C887F /* ScoreboardView.swift */; };
 		C35BE6462AE7CF9C0065D5EA /* BottonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35BE6452AE7CF9C0065D5EA /* BottonsView.swift */; };
 		C35BE6482AE80EA20065D5EA /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35BE6472AE80EA20065D5EA /* TitleView.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C30718362AEC1ED70061D781 /* WinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinView.swift; sourceTree = "<group>"; };
 		C32127C62AE7A98E001C887F /* ScoreboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardView.swift; sourceTree = "<group>"; };
 		C35BE6452AE7CF9C0065D5EA /* BottonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottonsView.swift; sourceTree = "<group>"; };
 		C35BE6472AE80EA20065D5EA /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				C3D9E9C52AE816FC00BCFF80 /* BoardView.swift */,
 				C3D9E9C72AE8174900BCFF80 /* SquareView.swift */,
 				C3D9E9CA2AE8191E00BCFF80 /* BoardColumView.swift */,
+				C30718362AEC1ED70061D781 /* WinView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				C3D9E9CB2AE8191E00BCFF80 /* BoardColumView.swift in Sources */,
 				C35BE6462AE7CF9C0065D5EA /* BottonsView.swift in Sources */,
 				C39597172AE6F19F00404606 /* Connect_FourApp.swift in Sources */,
+				C30718372AEC1ED70061D781 /* WinView.swift in Sources */,
 				C32127C72AE7A98E001C887F /* ScoreboardView.swift in Sources */,
 				C35BE6482AE80EA20065D5EA /* TitleView.swift in Sources */,
 				C3D9E9C82AE8174900BCFF80 /* SquareView.swift in Sources */,

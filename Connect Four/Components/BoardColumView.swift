@@ -17,12 +17,7 @@ struct BoardColumView: View {
         
         Button {
             
-            for value in stride(from:5, through: 0, by: -1) {
-                if board.board[column][value].square.color == ChipModel.ChipColor.gray {
-                    board.board[column][value] = SquareView(square: ChipModel(color: color))
-                    break
-                }
-            }
+            board.addChip(column: column)
             
         } label: {
             
@@ -34,6 +29,10 @@ struct BoardColumView: View {
                     
                 }
             }
+        }
+        .sheet(isPresented: $board.shouldShowWinView) {
+            WinView(showingWin: $board.shouldShowWinView)
+                .presentationDetents([.medium])
         }
     }
 }
