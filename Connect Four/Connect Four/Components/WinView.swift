@@ -37,7 +37,7 @@ struct WinView: View {
         }
         .frame(maxWidth: 200, maxHeight: 100)
         .padding()
-        .background(Color(red: 0.196, green: 0.305, blue: 0.488), in: RoundedRectangle(cornerRadius: 10))
+        .background(Color("ScoreBoardColor"), in: RoundedRectangle(cornerRadius: 10))
         
     }
 }

@@ -21,7 +21,7 @@ struct TitleView: View {
                 Image(systemName: "moon.fill")
                     .padding()
                     .foregroundColor(Color(red: 0.0, green: 0.0, blue: 0.0))
-                    .background(Color(red: 0.93, green: 0.95, blue: 0.971), in: RoundedRectangle(cornerRadius: 10))
+                    .background(Color("ThemeIconColor"), in: RoundedRectangle(cornerRadius: 10))
             }
             Text("Connect Four")
                 .font(.title)

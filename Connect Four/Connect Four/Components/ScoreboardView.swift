@@ -23,7 +23,7 @@ struct ScoreboardView: View {
             }
             .padding()
             .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
-            .background(Color(red: 0.693, green: 0.2, blue: 0.263), in: RoundedRectangle(cornerRadius: 10))
+            .background(Color("RedTeamColor"), in: RoundedRectangle(cornerRadius: 10))
             
             VStack {
                 Text("Yellow")
@@ -35,11 +35,11 @@ struct ScoreboardView: View {
             }
             .padding()
             .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
-            .background(Color(red: 0.682, green: 0.638, blue: 0.345), in: RoundedRectangle(cornerRadius: 10))
+            .background(Color("YellowTeamColor"), in: RoundedRectangle(cornerRadius: 10))
         }
         .padding()
-        .background(Color(red: 0.196, green: 0.305, blue: 0.488), in: RoundedRectangle(cornerRadius: 10))
-        .shadow(color: Color(red: 0.196, green: 0.305, blue: 0.488), radius: 2)
+        .background(Color("ScoreBoardColor"), in: RoundedRectangle(cornerRadius: 10))
+        .shadow(color: Color("ScoreBoardColor"), radius: 2)
         
     }
 }

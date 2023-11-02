@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C30718372AEC1ED70061D781 /* WinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30718362AEC1ED70061D781 /* WinView.swift */; };
 		C32127C72AE7A98E001C887F /* ScoreboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32127C62AE7A98E001C887F /* ScoreboardView.swift */; };
+		C332B7252AF3C68300488C55 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C332B7242AF3C68300488C55 /* Launch Screen.storyboard */; };
 		C35BE6462AE7CF9C0065D5EA /* BottonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35BE6452AE7CF9C0065D5EA /* BottonsView.swift */; };
 		C35BE6482AE80EA20065D5EA /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35BE6472AE80EA20065D5EA /* TitleView.swift */; };
 		C39597172AE6F19F00404606 /* Connect_FourApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39597162AE6F19F00404606 /* Connect_FourApp.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		C30718362AEC1ED70061D781 /* WinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinView.swift; sourceTree = "<group>"; };
 		C32127C62AE7A98E001C887F /* ScoreboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardView.swift; sourceTree = "<group>"; };
+		C332B7242AF3C68300488C55 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Components/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		C35BE6452AE7CF9C0065D5EA /* BottonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottonsView.swift; sourceTree = "<group>"; };
 		C35BE6472AE80EA20065D5EA /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 		C39597132AE6F19F00404606 /* Connect Four.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Connect Four.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +128,7 @@
 		C39597152AE6F19F00404606 /* Connect Four */ = {
 			isa = PBXGroup;
 			children = (
+				C332B7242AF3C68300488C55 /* Launch Screen.storyboard */,
 				C39597162AE6F19F00404606 /* Connect_FourApp.swift */,
 				C39597182AE6F19F00404606 /* ContentView.swift */,
 				C3F8912A2AE98F6400239A54 /* Model */,
@@ -274,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C332B7252AF3C68300488C55 /* Launch Screen.storyboard in Resources */,
 				C395971E2AE6F1A100404606 /* Preview Assets.xcassets in Resources */,
 				C395971B2AE6F1A100404606 /* Assets.xcassets in Resources */,
 			);
@@ -480,6 +484,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -509,6 +514,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

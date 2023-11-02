@@ -17,7 +17,7 @@ struct SquareView: View, Identifiable {
         ZStack {
             Text("")
                 .frame(minWidth: 40, maxHeight: 40)
-                .background(Color(red: 0.182, green: 0.281, blue: 0.343), in: RoundedRectangle(cornerRadius: 5))
+                .background(Color("SquareColor"), in: RoundedRectangle(cornerRadius: 5))
             
             if square.color == ChipModel.ChipColor.red {
                 Text("")
