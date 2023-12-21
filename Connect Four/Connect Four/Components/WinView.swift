@@ -23,17 +23,17 @@ struct WinView: View {
             Text("👑")
                 .font(.title2)
             Spacer()
-            Button {
-                showingWin.toggle()
-                board.win = ""
-                board.shouldShowWinView = false
-            } label: {
-                
-                Image(systemName: "xmark.circle")
-                    .resizable(capInsets: EdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: 0.0), resizingMode: .tile)
-                    .aspectRatio(contentMode: .fit)
-                    .foregroundColor(.red)
-            }
+//            Button {
+//                showingWin.toggle()
+//                board.win = ""
+//                board.shouldShowWinView = false
+//            } label: {
+//                
+//                Image(systemName: "xmark.circle")
+//                    .resizable(capInsets: EdgeInsets(top: 0.0, leading: 0.0, bottom: 0.0, trailing: 0.0), resizingMode: .tile)
+//                    .aspectRatio(contentMode: .fit)
+//                    .foregroundColor(.red)
+//            }
         }
         .frame(maxWidth: 200, maxHeight: 100)
         .padding()
