@@ -64,7 +64,7 @@ final class BoardViewModel: ObservableObject {
                 default:
                     board[column][value] = SquareView(square: ChipModel(color: ChipModel.ChipColor.gray))
                 }
-               
+                
                 break
             }
         }
@@ -105,9 +105,66 @@ final class BoardViewModel: ObservableObject {
         
         checkBoardVertically()
         checkBoardHorizontally()
-        checkBoardDiagonallyToLeft()
-        checkBoardDiagonallyToRight()
+        checkDiagonalForWin()
         
+        if isBoardFull() && win.isEmpty {
+            handleDraw()
+        }
+    }
+    
+    func checkDiagonalForWin() {
+        let maxRow = board.count
+        let maxCol = board[0].count
+        let neededToWin = 4
+        
+        // Verificación diagonal hacia la derecha
+        for row in 0..<(maxRow - neededToWin + 1) {
+            for col in 0..<(maxCol - neededToWin + 1) {
+                if checkSingleDiagonal(startRow: row, startCol: col, rowIncrement: 1, colIncrement: 1) {
+                    handleWin()
+                    return
+                }
+            }
+        }
+        
+        // Verificación diagonal hacia la izquierda
+        for row in 0..<(maxRow - neededToWin + 1) {
+            for col in (neededToWin - 1)..<maxCol {
+                if checkSingleDiagonal(startRow: row, startCol: col, rowIncrement: 1, colIncrement: -1) {
+                    handleWin()
+                    return
+                }
+            }
+        }
+    }
+    
+    func checkSingleDiagonal(startRow: Int, startCol: Int, rowIncrement: Int, colIncrement: Int) -> Bool {
+        var red = 0
+        var yellow = 0
+        
+        for i in 0..<4 {
+            let currentRow = startRow + i * rowIncrement
+            let currentCol = startCol + i * colIncrement
+            let color = board[currentRow][currentCol].square.color
+            
+            if color == ChipModel.ChipColor.red {
+                red += 1
+                yellow = 0
+            } else if color == ChipModel.ChipColor.yellow {
+                yellow += 1
+                red = 0
+            } else {
+                yellow = 0
+                red = 0
+            }
+            
+            if red == 4 || yellow == 4 {
+                win = (red == 4) ? "Red" : "Yellow"
+                return true
+            }
+        }
+        
+        return false
     }
     
     func checkBoardVertically() {
@@ -171,155 +228,17 @@ final class BoardViewModel: ObservableObject {
         }
     }
     
-    func checkBoardDiagonallyToRight() {
-        
-        var red: Int = 0
-        var yellow: Int = 0
-        
-        let col: Int = board.count
-        let row: Int = board[0].count
-        
-        // Check the right top half of the matrix diagonally
-        for r in 0..<col {
-            // Start from each cell of first row
-            var i = r
-            var j = 0
-            
-            while j < row && i >= 0 {
-                
-                if board[i][j].square.color == ChipModel.ChipColor.red {
-                    
-                    red += 1
-                    yellow = 0
-                    win(red: red, yellow: yellow)
-                    
-                } else if board[i][j].square.color == ChipModel.ChipColor.yellow {
-                    
-                    yellow += 1
-                    red = 0
-                    win(red: red, yellow: yellow)
-                    
-                } else {
-                    
-                    yellow = 0
-                    red = 0
-                    
+    func isBoardFull() -> Bool {
+        for column in board {
+            for square in column {
+                if square.square.color == ChipModel.ChipColor.gray {
+                    return false
                 }
-                
-                i -= 1
-                j += 1
-            }
-            
-        }
-            // Check the right bottom half of the matrix diagonally
-        for c in 1..<row {
-            // Start from each cell of last column
-            var i = col - 1
-            var j = c
-            
-            while j < row && i >= 0 {
-                
-                if board[i][j].square.color == ChipModel.ChipColor.red {
-                    
-                    red += 1
-                    yellow = 0
-                    win(red: red, yellow: yellow)
-                    
-                } else if board[i][j].square.color == ChipModel.ChipColor.yellow {
-                    
-                    yellow += 1
-                    red = 0
-                    win(red: red, yellow: yellow)
-                    
-                } else {
-                    
-                    yellow = 0
-                    red = 0
-                    
-                }
-                
-                i -= 1
-                j += 1
-                
             }
         }
+        return true
     }
     
-    func checkBoardDiagonallyToLeft() {
-        
-        var red: Int = 0
-        var yellow: Int = 0
-        
-        let col: Int = board.count
-        let row: Int = board[0].count
-        
-        // Check the left top half of the matrix diagonally
-        for r in stride(from: col - 1, to: 0, by: -1) {
-            // Start from the last cell of first row
-            var i = r
-            var j = 0
-            
-            while j < row && i <= 6 {
-                
-                if board[i][j].square.color == ChipModel.ChipColor.red {
-                    
-                    red += 1
-                    yellow = 0
-                    win(red: red, yellow: yellow)
-                    
-                } else if board[i][j].square.color == ChipModel.ChipColor.yellow {
-                    
-                    yellow += 1
-                    red = 0
-                    win(red: red, yellow: yellow)
-                    
-                } else {
-                    
-                    yellow = 0
-                    red = 0
-                    
-                }
-                
-                i += 1
-                j += 1
-            }
-            
-        }
-        
-        // Check the left bottom half of the matrix diagonally
-        for c in 1..<row {
-            // Start from each cell of first column
-            var i = 0
-            var j = c
-            
-            while j < row && i <= 6 {
-                
-                if board[i][j].square.color == ChipModel.ChipColor.red {
-                    
-                    red += 1
-                    yellow = 0
-                    win(red: red, yellow: yellow)
-                    
-                } else if board[i][j].square.color == ChipModel.ChipColor.yellow {
-                    
-                    yellow += 1
-                    red = 0
-                    win(red: red, yellow: yellow)
-                    
-                } else {
-                    
-                    yellow = 0
-                    red = 0
-                    
-                }
-                
-                i += 1
-                j += 1
-            }
-            
-        }
-        
-    }
     
     
     //-------- Win ------------
@@ -354,4 +273,27 @@ final class BoardViewModel: ObservableObject {
             turn = "red"
         }
     }
+    
+    func handleDraw() {
+        win = "Draw"
+        shouldShowWinView = true
+        
+        cleanBoard()
+        game += 1
+        checkGame()
+    }
+    
+    func handleWin() {
+        if win == "Red" {
+            incrementRed()
+        } else if win == "Yellow" {
+            incrementYellow()
+        }
+        
+        shouldShowWinView = true
+        cleanBoard()
+        game += 1
+        checkGame()
+    }
+    
 }
