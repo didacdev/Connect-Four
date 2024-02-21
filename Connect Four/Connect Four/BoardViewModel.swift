@@ -53,21 +53,19 @@ final class BoardViewModel: ObservableObject {
     
     func addChip(column: Int) {
         
-        for value in stride(from:5, through: 0, by: -1) {
-            if board[column][value].square.color == ChipModel.ChipColor.gray {
-                
-                switch turn {
-                case "red":
-                    board[column][value] = SquareView(square: ChipModel(color: ChipModel.ChipColor.red))
-                case "yellow":
-                    board[column][value] = SquareView(square: ChipModel(color: ChipModel.ChipColor.yellow))
-                default:
-                    board[column][value] = SquareView(square: ChipModel(color: ChipModel.ChipColor.gray))
-                }
-                
-                break
-            }
+        guard let lastIndex = board[column].lastIndex(where: { $0.square.color == ChipModel.ChipColor.gray }) else {
+            return
         }
+        
+        switch turn {
+        case "red":
+            board[column][lastIndex] = SquareView(square: ChipModel(color: ChipModel.ChipColor.red))
+        case "yellow":
+            board[column][lastIndex] = SquareView(square: ChipModel(color: ChipModel.ChipColor.yellow))
+        default:
+            board[column][lastIndex] = SquareView(square: ChipModel(color: ChipModel.ChipColor.gray))
+        }
+                
         
         changeTurn()
         checkBoard()
@@ -175,6 +173,8 @@ final class BoardViewModel: ObservableObject {
         // Check vertically
         
         for col in 0...6 {
+            
+            
             for row in stride(from: 5, to: 0, by: -1) {
                 if board[col][row].square.color == ChipModel.ChipColor.red {
                     

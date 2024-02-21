@@ -18,6 +18,6 @@ struct ChipModel {
     }
 
     
-    var color: ChipColor
+    var color: ChipColor    
     
 }

@@ -16,6 +16,8 @@
 		C39597192AE6F19F00404606 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39597182AE6F19F00404606 /* ContentView.swift */; };
 		C395971B2AE6F1A100404606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C395971A2AE6F1A100404606 /* Assets.xcassets */; };
 		C395971E2AE6F1A100404606 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C395971D2AE6F1A100404606 /* Preview Assets.xcassets */; };
+		C3A08D162B85F69700B8E795 /* ChipTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A08D152B85F69700B8E795 /* ChipTest.swift */; };
+		C3A08D1F2B8612D300B8E795 /* BoardViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A08D1E2B8612D300B8E795 /* BoardViewModelTest.swift */; };
 		C3D9E9C62AE816FC00BCFF80 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9E9C52AE816FC00BCFF80 /* BoardView.swift */; };
 		C3D9E9C82AE8174900BCFF80 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9E9C72AE8174900BCFF80 /* SquareView.swift */; };
 		C3D9E9CB2AE8191E00BCFF80 /* BoardColumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D9E9CA2AE8191E00BCFF80 /* BoardColumView.swift */; };
@@ -24,14 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C39597242AE6F1A200404606 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C395970B2AE6F19F00404606 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C39597122AE6F19F00404606;
-			remoteInfo = "Connect Four";
-		};
-		C395972E2AE6F1A200404606 /* PBXContainerItemProxy */ = {
+		C3A08D172B85F69700B8E795 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C395970B2AE6F19F00404606 /* Project object */;
 			proxyType = 1;
@@ -51,8 +46,10 @@
 		C39597182AE6F19F00404606 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C395971A2AE6F1A100404606 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C395971D2AE6F1A100404606 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C39597232AE6F1A200404606 /* Connect FourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Connect FourTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C395972D2AE6F1A200404606 /* Connect FourUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Connect FourUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3A08D132B85F69700B8E795 /* ConnectFourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConnectFourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3A08D152B85F69700B8E795 /* ChipTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipTest.swift; sourceTree = "<group>"; };
+		C3A08D1C2B86113A00B8E795 /* ChipTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChipTest.swift; path = ConnectFourTests/ChipTest.swift; sourceTree = "<group>"; };
+		C3A08D1E2B8612D300B8E795 /* BoardViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModelTest.swift; sourceTree = "<group>"; };
 		C3D9E9C52AE816FC00BCFF80 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		C3D9E9C72AE8174900BCFF80 /* SquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
 		C3D9E9CA2AE8191E00BCFF80 /* BoardColumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardColumView.swift; sourceTree = "<group>"; };
@@ -68,14 +65,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C39597202AE6F1A200404606 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C395972A2AE6F1A200404606 /* Frameworks */ = {
+		C3A08D102B85F69700B8E795 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -102,7 +92,9 @@
 		C395970A2AE6F19F00404606 = {
 			isa = PBXGroup;
 			children = (
+				C3A08D1C2B86113A00B8E795 /* ChipTest.swift */,
 				C39597152AE6F19F00404606 /* Connect Four */,
+				C3A08D142B85F69700B8E795 /* ConnectFourTests */,
 				C39597142AE6F19F00404606 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,8 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				C39597132AE6F19F00404606 /* Connect Four.app */,
-				C39597232AE6F1A200404606 /* Connect FourTests.xctest */,
-				C395972D2AE6F1A200404606 /* Connect FourUITests.xctest */,
+				C3A08D132B85F69700B8E795 /* ConnectFourTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +114,7 @@
 				C332B7242AF3C68300488C55 /* Launch Screen.storyboard */,
 				C39597162AE6F19F00404606 /* Connect_FourApp.swift */,
 				C39597182AE6F19F00404606 /* ContentView.swift */,
+				C3FD12DB2AEA4BF20068E402 /* BoardViewModel.swift */,
 				C3F8912A2AE98F6400239A54 /* Model */,
 				C32127C52AE7A91C001C887F /* Components */,
 				C395971A2AE6F1A100404606 /* Assets.xcassets */,
@@ -139,11 +131,19 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C3A08D142B85F69700B8E795 /* ConnectFourTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3A08D152B85F69700B8E795 /* ChipTest.swift */,
+				C3A08D1E2B8612D300B8E795 /* BoardViewModelTest.swift */,
+			);
+			path = ConnectFourTests;
+			sourceTree = "<group>";
+		};
 		C3F8912A2AE98F6400239A54 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				C3F8912B2AE98F8500239A54 /* ChipModel.swift */,
-				C3FD12DB2AEA4BF20068E402 /* BoardViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,41 +168,23 @@
 			productReference = C39597132AE6F19F00404606 /* Connect Four.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C39597222AE6F1A200404606 /* Connect FourTests */ = {
+		C3A08D122B85F69700B8E795 /* ConnectFourTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C395973A2AE6F1A200404606 /* Build configuration list for PBXNativeTarget "Connect FourTests" */;
+			buildConfigurationList = C3A08D192B85F69700B8E795 /* Build configuration list for PBXNativeTarget "ConnectFourTests" */;
 			buildPhases = (
-				C395971F2AE6F1A200404606 /* Sources */,
-				C39597202AE6F1A200404606 /* Frameworks */,
-				C39597212AE6F1A200404606 /* Resources */,
+				C3A08D0F2B85F69700B8E795 /* Sources */,
+				C3A08D102B85F69700B8E795 /* Frameworks */,
+				C3A08D112B85F69700B8E795 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C39597252AE6F1A200404606 /* PBXTargetDependency */,
+				C3A08D182B85F69700B8E795 /* PBXTargetDependency */,
 			);
-			name = "Connect FourTests";
-			productName = "Connect FourTests";
-			productReference = C39597232AE6F1A200404606 /* Connect FourTests.xctest */;
+			name = ConnectFourTests;
+			productName = ConnectFourTests;
+			productReference = C3A08D132B85F69700B8E795 /* ConnectFourTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		C395972C2AE6F1A200404606 /* Connect FourUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C395973D2AE6F1A200404606 /* Build configuration list for PBXNativeTarget "Connect FourUITests" */;
-			buildPhases = (
-				C39597292AE6F1A200404606 /* Sources */,
-				C395972A2AE6F1A200404606 /* Frameworks */,
-				C395972B2AE6F1A200404606 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C395972F2AE6F1A200404606 /* PBXTargetDependency */,
-			);
-			name = "Connect FourUITests";
-			productName = "Connect FourUITests";
-			productReference = C395972D2AE6F1A200404606 /* Connect FourUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -211,18 +193,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1500;
+				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					C39597122AE6F19F00404606 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
-					C39597222AE6F1A200404606 = {
-						CreatedOnToolsVersion = 15.0.1;
-						TestTargetID = C39597122AE6F19F00404606;
-					};
-					C395972C2AE6F1A200404606 = {
-						CreatedOnToolsVersion = 15.0.1;
+					C3A08D122B85F69700B8E795 = {
+						CreatedOnToolsVersion = 15.2;
 						TestTargetID = C39597122AE6F19F00404606;
 					};
 				};
@@ -241,8 +219,7 @@
 			projectRoot = "";
 			targets = (
 				C39597122AE6F19F00404606 /* Connect Four */,
-				C39597222AE6F1A200404606 /* Connect FourTests */,
-				C395972C2AE6F1A200404606 /* Connect FourUITests */,
+				C3A08D122B85F69700B8E795 /* ConnectFourTests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,14 +235,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C39597212AE6F1A200404606 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C395972B2AE6F1A200404606 /* Resources */ = {
+		C3A08D112B85F69700B8E795 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -293,32 +263,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C395971F2AE6F1A200404606 /* Sources */ = {
+		C3A08D0F2B85F69700B8E795 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C39597292AE6F1A200404606 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				C3A08D162B85F69700B8E795 /* ChipTest.swift in Sources */,
+				C3A08D1F2B8612D300B8E795 /* BoardViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C39597252AE6F1A200404606 /* PBXTargetDependency */ = {
+		C3A08D182B85F69700B8E795 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C39597122AE6F19F00404606 /* Connect Four */;
-			targetProxy = C39597242AE6F1A200404606 /* PBXContainerItemProxy */;
-		};
-		C395972F2AE6F1A200404606 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C39597122AE6F19F00404606 /* Connect Four */;
-			targetProxy = C395972E2AE6F1A200404606 /* PBXContainerItemProxy */;
+			targetProxy = C3A08D172B85F69700B8E795 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -514,18 +474,21 @@
 			};
 			name = Release;
 		};
-		C395973B2AE6F1A200404606 /* Debug */ = {
+		C3A08D1A2B85F69700B8E795 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U83AYT842T;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.didacdev.Connect-FourTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.didacdev.ConnectFourTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -533,56 +496,25 @@
 			};
 			name = Debug;
 		};
-		C395973C2AE6F1A200404606 /* Release */ = {
+		C3A08D1B2B85F69700B8E795 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U83AYT842T;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.didacdev.Connect-FourTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.didacdev.ConnectFourTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Connect Four.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Connect Four";
-			};
-			name = Release;
-		};
-		C395973E2AE6F1A200404606 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.didacdev.Connect-FourUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Connect Four";
-			};
-			name = Debug;
-		};
-		C395973F2AE6F1A200404606 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.didacdev.Connect-FourUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Connect Four";
 			};
 			name = Release;
 		};
@@ -607,20 +539,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C395973A2AE6F1A200404606 /* Build configuration list for PBXNativeTarget "Connect FourTests" */ = {
+		C3A08D192B85F69700B8E795 /* Build configuration list for PBXNativeTarget "ConnectFourTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C395973B2AE6F1A200404606 /* Debug */,
-				C395973C2AE6F1A200404606 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C395973D2AE6F1A200404606 /* Build configuration list for PBXNativeTarget "Connect FourUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C395973E2AE6F1A200404606 /* Debug */,
-				C395973F2AE6F1A200404606 /* Release */,
+				C3A08D1A2B85F69700B8E795 /* Debug */,
+				C3A08D1B2B85F69700B8E795 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
