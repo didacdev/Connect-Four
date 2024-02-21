@@ -13,6 +13,7 @@ The project is a game of Connect Four to play on a single device, where two play
 - [x] Game reset
 - [x] Game restart
 - [x] Game win detection
+- [x] Unit Test
 
 It is also possible to switch between light and dark mode by using the app toggle in the main interface.
 
